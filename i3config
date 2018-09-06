@@ -1,0 +1,19 @@
+# This file is trhe config file for I3
+
+#setting defaults
+set $mod Mod4
+set $terminal termite
+
+font pango:monospace 8
+
+#default bindings
+bindsym $mod+Return exec terminal
+bindsym $mod+shift+q kill
+bindsym $mod+d exec dmenu_run
+
+#default window related bindings
+# Move focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
